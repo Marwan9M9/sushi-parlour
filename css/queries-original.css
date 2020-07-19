@@ -1,0 +1,330 @@
+/* 0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop */
+/****************************************************************/
+/*                            LABTOP                           */
+/****************************************************************/
+@media only screen and (max-width: 75em) {
+  /********************************************/
+  /*                HEADER                    */
+  /********************************************/
+  .header {
+    background-position-y: 70%;
+  }
+
+  .text-box {
+    top: 50%;
+    left: 20%;
+  }
+
+  /********************************************/
+  /*           SECTION FEATURES               */
+  /********************************************/
+  .meals-container {
+    width: 95%
+  }
+}
+
+/****************************************************************/
+/*                       Tablet portrait                        */
+/****************************************************************/
+@media only screen and (max-width: 64em) {
+  /********************************************/
+  /*                BASICS                    */
+  /********************************************/
+  .html {
+    font-size: 56.25%;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  /********************************************/
+  /*                HEADER                    */
+  /********************************************/
+  .nav {
+    padding: 2rem 2rem;
+  }
+
+  .nav-list {
+    float: left;
+    display: none;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 5rem;
+  }
+
+  .nav-item {
+    float: none;
+  }
+
+  .nav-item:not(:first-child) {
+    margin-left: 0rem;
+  }
+
+  .text-box {
+    top: 50%;
+    left: 50%;
+  }
+
+  .sandwich-icon {
+    position: fixed;
+    display: block;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1000;
+  }
+
+  /********************************************/
+  /*              SECTION ABOUT               */
+  /********************************************/
+
+  .section-about {
+    background: var(--color-grey-1);
+    color: var(--color-white);
+    padding: 8rem 0rem 5rem 0;
+  }
+  .section-about .col:first-child {
+    padding-left: 4rem;
+  }
+
+  .section-about .paragraph {
+    padding-right: 0rem;
+  }
+
+  .about-img {
+    width: 90%;
+    margin-top: -2rem;
+    padding-left: 2rem;
+  }
+
+  /********************************************/
+  /*           SECTION FEATURES               */
+  /********************************************/
+  .section-features .span-1-of-3 {
+    width: 100% !important;
+    text-align: center;
+    padding: 0 10rem;
+  }
+
+  .section-features .span-1-of-3:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  .section-features .paragraph {
+    text-align: center;
+  }
+
+  .meal-box {
+    padding: 3rem;
+  }
+
+  /********************************************/
+  /*           SECTION DISCOVER               */
+  /********************************************/
+  .new-menu-list:nth-of-type(1) {
+    padding-right: 0;
+    padding-left: 4rem;
+    padding-right: 1rem;
+  }
+
+  .new-menu-list:nth-of-type(2) {
+    padding-left: 0;
+    padding-right: 4rem;
+  }
+
+  .sushi-icon {
+    width: 15%;
+    height: 6rem;
+    margin-top: 2rem;
+  }
+
+  .discover-menu-text-box .paragraph {
+    padding-right: 2rem;
+  }
+
+  /********************************************/
+  /*          SECTION DISCOVER 2              */
+  /********************************************/
+  .section-discover-2 .span-1-of-3 {
+    width: 50%;
+    margin: 0;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .section-discover-2 .span-1-of-3:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  /********************************************/
+  /*               FOOTER                     */
+  /********************************************/
+  .footer .span-1-of-3 {
+    padding-left: 4rem;
+  }
+
+  .footer .paragraph {
+    padding-right: 3rem;
+  }
+}
+
+
+/****************************************************************/
+/*                            Phone                             */
+/****************************************************************/
+@media only screen and (max-width: 37.5em) {
+  /********************************************/
+  /*                BASICS                    */
+  /********************************************/
+  html {
+    font-size: 50%;
+  }
+
+  /********************************************/
+  /*                HEADER                    */
+  /********************************************/
+  .logo-box {
+    float:none;
+    text-align: unset;
+  }
+
+  .nav-list {
+    margin-left: 0;
+  }
+
+  .text-box .main--heading {
+    font-size: 4rem;
+  }
+  
+  .text-box .sub--heading {
+    font-size: 5rem;
+  }
+
+  /********************************************/
+  /*              SECTION ABOUT               */
+  /********************************************/
+  .section-about .span-1-of-2 {
+    width: 100%;
+  }
+
+  .section-about .span-1-of-2:first-child {
+    padding: 0 3rem;
+  }
+
+  .about-img {
+    margin: 0;
+    padding-left: 5rem;
+  }
+
+  /********************************************/
+  /*           SECTION FEATURES               */
+  /********************************************/
+  .section-features .span-1-of-3 {
+    padding: 0 5rem;
+  }
+
+  .section-features .paragraph {
+    padding: 0;
+  }
+
+  .meal-list {
+    width: 100%;
+  }
+
+  /********************************************/
+  /*           SECTION ABOUT-2                */
+  /********************************************/
+  .simple-box {
+    width: 100%;
+    padding: 10rem 5rem;
+  }
+
+  /********************************************/
+  /*           SECTION DISCOVER               */
+  /********************************************/
+  .new-menu-list:nth-of-type(1),
+  .new-menu-list:nth-of-type(2) {
+    float: none;
+    width: 100%;
+    padding: 0;
+    padding-left: 3rem;
+  }
+
+  /********************************************/
+  /*              SECTION BOOK                */
+  /********************************************/
+  .section-book .span-1-of-3:not(:last-child) {
+    margin-bottom: 4.5rem;
+  }
+
+  .btn-book:link,
+  .btn-book:visited {
+    width: 30%;
+  }
+
+  /********************************************/
+  /*          SECTION DISCOVER 2              */
+  /********************************************/
+  .section-discover-2 .span-1-of-3 {
+    width: 85%;
+  }
+
+  /********************************************/
+  /*               FOOTER                     */
+  /********************************************/
+  .footer {
+    padding-bottom: 0rem;
+  }
+
+  .footer .span-1-of-3:first-child {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .footer .span-2-of-3 .span-1-of-3 {
+    padding-left: 0rem;
+    width: 32.26%;
+  }
+}
+
+
+
+/****************************************************************/
+/*                        SMALL PHONE                           */
+/****************************************************************/
+@media only screen and (max-width: 25.875em) {
+  /********************************************/
+  /*                BASICS                    */
+  /********************************************/
+  html {
+    font-size: 45%;
+  }
+
+  /********************************************/
+  /*                HEADER                    */
+  /********************************************/
+  .text-box {
+    width: 100%;
+  }
+
+  .text-box .main--heading {
+    font-size: 6rem;
+  }
+  
+  .text-box .sub--heading {
+    font-size: 7rem;
+  }
+
+  /********************************************/
+  /*           SECTION FEATURES               */
+  /********************************************/
+
+  .meal-box {
+    padding: 4rem 4rem;
+    text-align: center;
+  }
+}
